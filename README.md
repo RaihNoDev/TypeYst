@@ -1,21 +1,27 @@
 # TypeYts
 
-🧠 TypeYts é uma linguagem criada por gbbx para reescrever o universo dos bots, lógica e estilo. Arquivos .ty ganham sintaxe, ícone e alma.
+🚀 **TypeYts** é uma nova linguagem de programação criada para expandir as fronteiras da lógica, automação e criatividade. Com arquivos `.ty`, você entra num ecossistema minimalista, direto e poderoso — onde cada comando tem alma e estilo.
 
-# ✨ Recursos
+![TypeYts Logo](https://raw.githubusercontent.com/RaihNoDev/typeyts/main/icons/ty-icon.png)
 
-🌈 Destaque de comandos como loading, loading, loading
+---
 
-🎨 Ícone exclusivo .ty
+## ✨ Recursos principais
 
-💥 Pronto pra bots, automações e linguagens customizadas, futuramente para html e css.
+- 🌈 **Destaque de sintaxe** para comandos como `ytz`, `trn`, `wait`, `call`, `prompt`, etc
+- 🧠 Suporte a arquivos `.ty` com ícone exclusivo e configuração de linguagem
+- 🧰 Suporte a tema de ícones (`typeyts-icons`)
+- 🪄 Preparado para automações, bots e engines personalizados
 
-# 📂 Como usar
+---
 
-Crie um arquivo dex.ty ou index.ty
+## 📦 Como usar
 
-Digite seus comandos
+1. Crie um arquivo `index.ty` ou `main.ty`
+2. Escreva seus comandos TypeYts
+3. Observe a mágica no seu editor!
 
-Sinta o poder do .ty bater no VS Code
-
-# 🚀 Domine o VS Code. Crie com TypeYts.
+```ty
+ytz "Olá, mundo!"
+wait 1s
+trn to="console"
