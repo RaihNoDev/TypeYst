@@ -1,71 +1,22 @@
 # ⚙️ TypeYts
 
-**TypeYts** é uma linguagem de script criada por **RaihNoDev**, feita para lógica clara, escrita simples e uso em automação de fluxos ou bots. Seu foco é a simplicidade: arquivos `.ty` são escritos com palavras-chave diretas que descrevem ações e comportamentos do sistema de forma legível e direta.
+**TypeYts** é uma linguagem de script desenvolvida por **RaihNoDev**, criada com o objetivo de proporcionar uma sintaxe simples, legível e altamente funcional para automações, bots e fluxos lógicos. Com comandos diretos e comportamento previsível, TypeYts elimina a complexidade excessiva de outras linguagens, focando na expressividade do que você quer que o código faça.
+
+A linguagem usa arquivos com extensão `.ty`, e todo o seu código é baseado em palavras-chave específicas, sem necessidade de ponto e vírgula, tipos rígidos ou blocos verbosos. Seu foco está na escrita fluida, onde cada linha representa uma instrução clara e objetiva.
 
 ---
 
-## ✨ Visão geral
+## 📚 Palavras-chave e descrição
 
-- Sintaxe limpa e sem necessidade de ponto e vírgula
-- Palavras-chave autoexplicativas
-- Suporte nativo a funções, condições, eventos e objetos
-- Arquivos `.ty` direto ao ponto
+- `pers` → ``Declara uma constante imutável.``  
+  Exemplo: `pers prefix = "ty,"`
 
----
+- `get` → ``Declara uma variável mutável que pode ser reatribuída.``  
+  Exemplo: `get contador = 0`
 
-## 📚 Palavras-chave e estruturas
-
-- `pers` → ``Constante imutável``
-- `get` → ``Variável mutável``
-- `flag` → ``Declaração de função personalizada``
-- `last` → ``Valor de retorno de uma função``
-- `case` → ``Estrutura condicional com múltiplas opções``
-- `onStartup()` → ``Executado quando o script inicia``
-- `onSlash("comando")` → ``Dispara ao receber um comando de barra``
-- `send()` → ``Envia mensagens, texto ou objetos``
-- `log()` → ``Exibe mensagens no terminal (debug)``
-- `fileExists()` → ``Verifica se um arquivo existe no sistema``
-
----
-
-## 📦 Tipos de dados
-
-- Strings: `"texto"`
-- Números: `10`, `-3.5`
-- Booleanos: `true`, `false`
-- Null: `null`
-- Objetos: `{ chave: valor }`
-- Arrays: `["item1", "item2"]` *(em desenvolvimento)*
-
----
-
-## 🔣 Operadores
-
-- Aritméticos: `+`, `-`, `*`, `/`, `%`
-- Comparação: `==`, `!=`, `>`, `<`, `>=`, `<=`
-- Lógicos: `&&`, `||`, `!`
-- Concatenação: `+` para strings
-
----
-
-## 🧠 Exemplo
-
-```ty
-pers prefix = "ty,";
-
-onStartup() {
-  log("Prefixo definido: " + prefix);
-}
-
-onSlash("ping") {
-  send("🏓 Pong!");
-}
-
-flag somar(a, b) {a
-  last a + b;
-}
-
-case comando {
-  "oi": send("Olá!");
-  "soma": send("2 + 3 = " + somar(2, 3));
-}
+- `flag` → ``Cria uma função personalizada com parâmetros.``  
+  Exemplo:
+  ```ty
+  flag somar(a, b) {
+    last a + b;
+  }
