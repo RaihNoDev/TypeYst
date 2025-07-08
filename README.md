@@ -175,4 +175,4 @@ Uma linguagem para quem busca clareza, simplicidade e controle.
 
 ```
 
-
+Aproveite amo meus amigos: susta_dev1234, voidz.011, zenect_, 7gsw(Snoow discord.gg/peitos), portugaxd, matheu.01, aboboracompedra2, isaquin._.uwu.
