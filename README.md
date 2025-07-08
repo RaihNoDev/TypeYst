@@ -1,33 +1,37 @@
 <div align="center">
+  <img src="https://media.discordapp.net/attachments/1391612190892490845/1392259142625918976/ty-icon.png" height="128" />
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="64" />
-<h1>📦 TypeYts Docs</h1>
-<p><strong>Uma linguagem com alma hacker feita para bots do Discord.</strong></p>
-<img src="https://img.shields.io/badge/style-terminal-hacker-00ffff?style=flat-square&logo=matrix&logoColor=00ffff" />
+  <h1>⚙️ TypeYts</h1>
+  <p><strong>Linguagem de script feita pra bots com alma hacker.</strong></p>
+  <p><em>🛠️ Criada por <strong>RaihNoDev</strong></em></p>
 
+  <img src="https://img.shields.io/badge/sintaxe-minimalista-00ffff?style=for-the-badge&logo=terminal&logoColor=00ffff" />
+  <img src="https://img.shields.io/badge/estilo-terminal--hacker-green?style=for-the-badge" />
 </div>
 
 ---
 
-## 🧠 O que é TypeYts?
+## 🚀 O que é a TypeYts?
 
-`TypeYts` é uma microlinguagem inspirada em JavaScript com sintaxe limpa, curta e poderosa.  
-Você escreve com comandos simples como `pers`, `flag`, `case` e seu bot responde automaticamente.
+TypeYts é uma linguagem baseada em comandos simples que você escreve como se estivesse num terminal. Ela é feita pra facilitar a criação de bots, fluxos e funções automatizadas, com uma sintaxe limpa, sem ponto e vírgula obrigatório e com foco em **clareza + velocidade**.
 
-📎 Ideal para:
-
-- Criadores de bots no Discord que querem simplicidade
-- Pessoas que curtem terminal hacker retrô 👾
-- Projetos educacionais com docs interativas
+Não é JavaScript. Não é YAML. É TypeYts.
 
 ---
 
-## 🖥️ Prévia do projeto
+## ✨ Como funciona
 
-![screenshot](./screenshot.png) <!-- troque pela sua captura -->
-> ✨ Interface com docs estilizadas, terminal falso e embed Discord no final de cada comando.
+Em TypeYts, você cria comandos com palavras-chave diretas como `pers`, `get`, `flag`, `case`, `send()` e `onStartup()`. A lógica flui como um script de terminal.
 
----
+Exemplo:
 
-## 📁 Estrutura
+```ty
+pers prefix = "ty,";
 
+onStartup() {
+  log("Bot iniciado com prefixo: " + prefix);
+}
+
+onSlash("ping") {
+  send("🏓 Pong!");
+}
