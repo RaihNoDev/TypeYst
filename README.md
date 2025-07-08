@@ -1,6 +1,5 @@
-Claro! Aqui está um `README.md` completo, ampliado e detalhado sobre a linguagem **TypeYts** — totalmente focado na linguagem em si, explicando todas as palavras-chave, estruturas, tipos e lógica de uso. Ideal para incluir no repositório oficial:
 
-```markdown
+```
 # ⚙️ TypeYts
 
 **TypeYts** é uma linguagem de script desenvolvida por **RaihNoDev**, criada com o objetivo de proporcionar uma sintaxe simples, legível e altamente funcional para automações, bots e fluxos lógicos. Com comandos diretos e comportamento previsível, TypeYts elimina a complexidade excessiva de outras linguagens, focando na expressividade do que você quer que o código faça.
