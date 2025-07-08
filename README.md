@@ -1,37 +1,71 @@
-<div align="center">
-  <img src="https://media.discordapp.net/attachments/1391612190892490845/1392259142625918976/ty-icon.png" height="128" />
+# ⚙️ TypeYts
 
-  <h1>⚙️ TypeYts</h1>
-  <p><strong>Linguagem de script feita pra bots com alma hacker.</strong></p>
-  <p><em>🛠️ Criada por <strong>RaihNoDev</strong></em></p>
-
-  <img src="https://img.shields.io/badge/sintaxe-minimalista-00ffff?style=for-the-badge&logo=terminal&logoColor=00ffff" />
-  <img src="https://img.shields.io/badge/estilo-terminal--hacker-green?style=for-the-badge" />
-</div>
+**TypeYts** é uma linguagem de script criada por **RaihNoDev**, feita para lógica clara, escrita simples e uso em automação de fluxos ou bots. Seu foco é a simplicidade: arquivos `.ty` são escritos com palavras-chave diretas que descrevem ações e comportamentos do sistema de forma legível e direta.
 
 ---
 
-## 🚀 O que é a TypeYts?
+## ✨ Visão geral
 
-TypeYts é uma linguagem baseada em comandos simples que você escreve como se estivesse num terminal. Ela é feita pra facilitar a criação de bots, fluxos e funções automatizadas, com uma sintaxe limpa, sem ponto e vírgula obrigatório e com foco em **clareza + velocidade**.
-
-Não é JavaScript. Não é YAML. É TypeYts.
+- Sintaxe limpa e sem necessidade de ponto e vírgula
+- Palavras-chave autoexplicativas
+- Suporte nativo a funções, condições, eventos e objetos
+- Arquivos `.ty` direto ao ponto
 
 ---
 
-## ✨ Como funciona
+## 📚 Palavras-chave e estruturas
 
-Em TypeYts, você cria comandos com palavras-chave diretas como `pers`, `get`, `flag`, `case`, `send()` e `onStartup()`. A lógica flui como um script de terminal.
+- `pers` → ``Constante imutável``
+- `get` → ``Variável mutável``
+- `flag` → ``Declaração de função personalizada``
+- `last` → ``Valor de retorno de uma função``
+- `case` → ``Estrutura condicional com múltiplas opções``
+- `onStartup()` → ``Executado quando o script inicia``
+- `onSlash("comando")` → ``Dispara ao receber um comando de barra``
+- `send()` → ``Envia mensagens, texto ou objetos``
+- `log()` → ``Exibe mensagens no terminal (debug)``
+- `fileExists()` → ``Verifica se um arquivo existe no sistema``
 
-Exemplo:
+---
+
+## 📦 Tipos de dados
+
+- Strings: `"texto"`
+- Números: `10`, `-3.5`
+- Booleanos: `true`, `false`
+- Null: `null`
+- Objetos: `{ chave: valor }`
+- Arrays: `["item1", "item2"]` *(em desenvolvimento)*
+
+---
+
+## 🔣 Operadores
+
+- Aritméticos: `+`, `-`, `*`, `/`, `%`
+- Comparação: `==`, `!=`, `>`, `<`, `>=`, `<=`
+- Lógicos: `&&`, `||`, `!`
+- Concatenação: `+` para strings
+
+---
+
+## 🧠 Exemplo
 
 ```ty
 pers prefix = "ty,";
 
 onStartup() {
-  log("Bot iniciado com prefixo: " + prefix);
+  log("Prefixo definido: " + prefix);
 }
 
 onSlash("ping") {
   send("🏓 Pong!");
+}
+
+flag somar(a, b) {
+  last a + b;
+}
+
+case comando {
+  "oi": send("Olá!");
+  "soma": send("2 + 3 = " + somar(2, 3));
 }
