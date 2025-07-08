@@ -1,27 +1,33 @@
-# TypeYts
+<div align="center">
 
-🚀 **TypeYts** é uma nova linguagem de programação criada para expandir as fronteiras da lógica, automação e criatividade. Com arquivos `.ty`, você entra num ecossistema minimalista, direto e poderoso — onde cada comando tem alma e estilo.
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="64" />
+<h1>📦 TypeYts Docs</h1>
+<p><strong>Uma linguagem com alma hacker feita para bots do Discord.</strong></p>
+<img src="https://img.shields.io/badge/style-terminal-hacker-00ffff?style=flat-square&logo=matrix&logoColor=00ffff" />
 
-![TypeYts Logo](https://raw.githubusercontent.com/RaihNoDev/typeyts/main/icons/ty-icon.png)
-
----
-
-## ✨ Recursos principais
-
-- 🌈 **Destaque de sintaxe** para comandos como `ytz`, `trn`, `wait`, `call`, `prompt`, etc
-- 🧠 Suporte a arquivos `.ty` com ícone exclusivo e configuração de linguagem
-- 🧰 Suporte a tema de ícones (`typeyts-icons`)
-- 🪄 Preparado para automações, bots e engines personalizados
+</div>
 
 ---
 
-## 📦 Como usar
+## 🧠 O que é TypeYts?
 
-1. Crie um arquivo `index.ty` ou `main.ty`
-2. Escreva seus comandos TypeYts
-3. Observe a mágica no seu editor!
+`TypeYts` é uma microlinguagem inspirada em JavaScript com sintaxe limpa, curta e poderosa.  
+Você escreve com comandos simples como `pers`, `flag`, `case` e seu bot responde automaticamente.
 
-```ty
-ytz "Olá, mundo!"
-wait 1s
-trn to="console"
+📎 Ideal para:
+
+- Criadores de bots no Discord que querem simplicidade
+- Pessoas que curtem terminal hacker retrô 👾
+- Projetos educacionais com docs interativas
+
+---
+
+## 🖥️ Prévia do projeto
+
+![screenshot](./screenshot.png) <!-- troque pela sua captura -->
+> ✨ Interface com docs estilizadas, terminal falso e embed Discord no final de cada comando.
+
+---
+
+## 📁 Estrutura
+
