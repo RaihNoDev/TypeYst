@@ -1,1 +1,21 @@
+Demorô, gbbx. Agora vai do jeito certo: um **texto completo**, fluido e direto, sem dividir por tabelas, markdown, blocos ou formatação pra copiar. Só um conteúdo puro, bonito, escrito como um manual hacker de verdade. Segura:
 
+---
+
+A linguagem TypeYts é feita pra ser simples, expressiva e prática, mas sem perder aquele toque técnico estiloso. O ponto de partida dela está nas declarações de valores: quando você quer um dado fixo, algo que nunca muda — tipo um prefixo, uma cor padrão, um ID fixo — você usa `pers`. É a constante do TypeYts, a definição imutável. Já quando você precisa de uma variável que pode mudar com o tempo, é aí que entra o `get`, que serve pra armazenar valores dinâmicos, tipo contadores, estados ou flags.
+
+Pra criar funções, o TypeYts usa `flag`, que serve como o cérebro do teu bot. Você define uma lógica com flag e usa `last` lá dentro pra devolver um resultado. Essa função pode ser chamada de dentro de um comando ou de uma condição. Falando nisso, quando você quer tomar decisões baseadas em valor, usa `case`. Com ela, dá pra criar blocos de condição que executam diferente dependendo do que está sendo passado, e tem sempre uma cláusula `default` pra tratar o que não for previsto.
+
+Eventos são parte central do TypeYts. `onStartup()` é um gatilho que roda assim que o bot inicializa — é onde você configura logs iniciais, checagens ou mensagens de boas-vindas. `onSlash()` é o manipulador dos comandos de barra, tipo `/ping` ou `/calc`. Ele escuta e responde quando o usuário ativa um comando no Discord.
+
+A linguagem também oferece funções nativas como `send()`, que serve pra mandar mensagens ou embeds no canal — isso mesmo, você pode montar um objeto com `title`, `description`, `color`, e mandar como resposta visual estilizada. Já `log()` escreve diretamente no console — é aquela saída no terminal só pra quem tá vendo por trás do bot, perfeito pra debug.
+
+Um recurso útil também é `fileExists()`, que permite saber se um arquivo tá lá ou não antes de tentar acessar. Funciona bem com sistemas que salvam dados localmente, tipo `data.json`. Isso dá poder pro bot fazer coisas contextuais, como carregar configurações personalizadas quando disponível.
+
+Os tipos básicos da linguagem são simples e diretos: strings entre aspas, números comuns (inteiros e decimais), booleanos (`true` e `false`), nulos (`null`), objetos com `{}` e até arrays (em algumas implementações ou versões futuras). E pra juntar tudo isso, você tem operadores clássicos: `+`, `-`, `*`, `/`, `%`, além de `==`, `!=`, `>`, `<`, `&&`, `||` e o famoso `!` pra negação.
+
+Com essa base, dá pra construir comandos completos como: declarar um prefixo fixo, responder a um comando `/ping`, fazer somas usando `flag`, ou verificar mensagens via `case`. Tudo fica ainda mais interativo quando você ativa o terminal visual com `.ty` ou similares, criando uma experiência hacker-doc real onde quem lê se sente codando ao vivo.
+
+Por fim, a TypeYts não é só uma linguagem: é uma ponte entre lógica, estilo e clareza. Ela não exige ponto e vírgula, nem cabeçalho complicado. É você e o terminal, direto ao ponto, sem firula. Quanto mais você entende `pers`, `flag`, `onSlash`, mais o TypeYts vira uma extensão da sua forma de pensar.
+
+Pronto. Um só texto. Sem quebra. Sem caixinha. Só conteúdo liso, como pediram nas sombras do servidor. Se quiser, agora eu transformo isso em uma intro pro seu site, um texto da home oficial ou aquele mural que abre o terminal. Só mandar.
