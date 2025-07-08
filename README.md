@@ -61,7 +61,7 @@ onSlash("ping") {
   send("🏓 Pong!");
 }
 
-flag somar(a, b) {
+flag somar(a, b) {a
   last a + b;
 }
 
